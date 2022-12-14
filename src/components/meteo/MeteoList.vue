@@ -24,7 +24,7 @@ export default {
     },
     created() {
         // Récupérez les recettes à partir de l'API
-        axios.get('http://api.openweathermap.org/data/2.5/forecast?lat=45.5031824&lon=-73.5698065&cnt=18&units=metric&appid=9622b47b8c311484f5722e3d63812036')
+        axios.get('https://api.openweathermap.org/data/2.5/forecast?lat=45.5031824&lon=-73.5698065&cnt=18&units=metric&appid=9622b47b8c311484f5722e3d63812036')
             .then(response => {
                 const result = []
                 let dataArray = response.data
