@@ -21,6 +21,7 @@
         <div class="col-sm-12 banierre"></div>
 
       </div>
+      <ListImage msg="App" />
     </div>
 
   </div>
@@ -31,7 +32,7 @@
 import DeezerCard from './components/deezer/DeezerCard.vue'
 import SnowFlocons from './components/SnowFlocons.vue'
 import MeteoCard from './components/meteo/MeteoList.vue'
-
+import ListImage from './components/picture/ListImage.vue'
 import ChemineVideo from './components/cheminee/ChemineVideo.vue'
 export default {
   name: 'App',
@@ -40,6 +41,7 @@ export default {
     DeezerCard,
     SnowFlocons,
     MeteoCard,
+    ListImage
 
   }
 }
