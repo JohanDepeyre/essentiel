@@ -188,7 +188,7 @@ export default {
 /* Définissez les styles pour le composant */
 .meteo-card {
     width: 200px;
-    height: 300px;
+    height: 200px;
     background-color: #F0F0EF;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -212,6 +212,7 @@ export default {
     margin: 0;
     font-size: 16px;
     font-weight: bold;
+    color: rgb(37, 36, 36);
 }
 
 .meteo-card-description {
@@ -257,6 +258,11 @@ export default {
     background-color: #fff;
     filter: drop-shadow(10px 10px 4px #4444dd);
     margin: auto;
-    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h5 {
+    margin-top: ;
+    font-size: 15px;
 }
 </style>

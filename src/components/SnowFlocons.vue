@@ -210,8 +210,9 @@ export default {};
     background: white;
     border-radius: 50%;
 
+
     @for $i from 1 through $total {
-        $random-x: random(1000000) * 0.0001vw;
+        $random-x: random(930000) * 0.0001vw;
         $random-offset: random_range(-100000, 100000) * 0.0001vw;
         $random-x-end: $random-x +$random-offset;
         $random-x-end-yoyo: $random-x +($random-offset / 2);

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Liste de meteo</h1>
+
         <div class="meteo-list">
             <meteo-card v-for="meteo in meteos" :key="meteo.dt" :meteo="meteo" />
         </div>
@@ -28,7 +28,7 @@ export default {
             .then(response => {
                 const result = []
                 let dataArray = response.data
-                for (let i = 0; i < dataArray.list.length; i += 2) {
+                for (let i = 0; i < 6; i += 2) {
                     dataArray.list[i].dt_txt = dayjs(dataArray.list[i].dt_txt).format('dddd,  D MMMM, YYYY h:mm A')
                     result.push(dataArray.list[i]);
                 }

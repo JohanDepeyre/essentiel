@@ -1,19 +1,23 @@
 <template>
     <div class="deezer-list">
-        <div class="deezer-card">
-            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/playlist/1479458365" width="100%"
-                height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        <div class="deezer-card text-align">
+            <iframe title="deezer-widget"
+                src="https://widget.deezer.com/widget/dark/playlist/1479458365?tracklist=false" width="100%"
+                height="150" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         </div>
         <div class="deezer-card">
-            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/playlist/2474689942" width="100%"
-                height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <iframe title="deezer-widget"
+                src="https://widget.deezer.com/widget/dark/playlist/2474689942?tracklist=false" width="100%"
+                height="150" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         </div>
         <div class="deezer-card"><iframe title="deezer-widget"
-                src="https://widget.deezer.com/widget/dark/artist/7307/top_tracks" width="100%" height="300"
-                frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe></div>
+                src="https://widget.deezer.com/widget/dark/artist/7307/top_tracks?tracklist=false" width="100%"
+                height="150" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        </div>
         <div class="deezer-card">
-            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/playlist/9634709682" width="100%"
-                height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <iframe title="deezer-widget"
+                src="https://widget.deezer.com/widget/dark/playlist/9634709682?tracklist=false" width="100%"
+                height="150" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
         </div>
 
     </div>
@@ -28,7 +32,8 @@ export default {};
 .deezer-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
+    padding: 15px;
+
 }
 
 .deezer-card {
@@ -37,7 +42,8 @@ export default {};
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: auto;
+    margin-top: 10px;
+    justify-content: center;
     background-color: #191919;
 }
 </style>

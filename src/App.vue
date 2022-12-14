@@ -1,29 +1,46 @@
 <template >
   <div id="app">
     <div class="body">
-
-
       <SnowFlocons msg="App" />
-      <DeezerCard msg="App" />
-      <ListMeteo msg="App" />
-      <ListRecipes msg="App" />
+      <div class="container">
 
+        <div class="row">
+          <div class="col-sm-2">
+            <DeezerCard msg="App" />
+          </div>
+          <div class="col-sm-8">
+            <ChemineVideo msg="App" />
+          </div>
+          <div class="col-sm-2">
+            <MeteoCard msg="App" />
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-sm-12 banierre"></div>
+
+      </div>
     </div>
+
   </div>
 </template>
 
 <script>
-import ListRecipes from './components/RecipesList.vue'
-import ListMeteo from './components/meteo/MeteoList.vue'
+
 import DeezerCard from './components/deezer/DeezerCard.vue'
 import SnowFlocons from './components/SnowFlocons.vue'
+import MeteoCard from './components/meteo/MeteoList.vue'
+
+import ChemineVideo from './components/cheminee/ChemineVideo.vue'
 export default {
   name: 'App',
   components: {
-    ListRecipes,
-    ListMeteo,
+    ChemineVideo,
     DeezerCard,
-    SnowFlocons
+    SnowFlocons,
+    MeteoCard,
+
   }
 }
 let body = document.querySelector("body");
@@ -37,18 +54,29 @@ body.style.backgroundColor = "#0E1219";
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ffffff;
-  width: 100%;
 
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 
-
-
 .body {
-  height: 100vh;
+
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+
   overflow: hidden;
 
+}
+
+.banierre {
+  background-image: url("assets/images/bandeau.PNG");
+  height: 200px;
 }
 </style>
