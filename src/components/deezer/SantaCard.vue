@@ -12,7 +12,7 @@ export default {
 </script>
 <style>
 .santa-card {
-    width: 80%;
+    width: 100%;
     height: 200px;
     background-color: #ffffff;
     border-radius: 8px;

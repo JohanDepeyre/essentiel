@@ -47,7 +47,7 @@ export default {
 </script>
 <style>
 .deezer-card {
-    width: 80%;
+    width: 100%;
     height: 200px;
     background-color: #ffffff;
     border-radius: 8px;
