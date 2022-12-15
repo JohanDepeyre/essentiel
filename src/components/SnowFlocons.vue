@@ -203,7 +203,7 @@ export default {};
 }
 
 .snow {
-    $total: 200;
+    $total: 100;
     position: absolute;
     width: 10px;
     height: 10px;

@@ -187,7 +187,7 @@ export default {
 
 /* Définissez les styles pour le composant */
 .meteo-card {
-    width: 200px;
+    width: 80%;
     height: 200px;
     background-color: #F0F0EF;
     border-radius: 8px;
@@ -242,8 +242,8 @@ export default {
     height: 75px;
     width: 75px;
     position: absolute;
-    top: 5px;
-    left: 25px;
+    top: 0px;
+    left: 15px;
     filter: drop-shadow(1px 1px 0 fade(black, 3)) drop-shadow(-5px -5px 0 fade(black, 8));
 }
 
