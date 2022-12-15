@@ -25,4 +25,17 @@ export default {
 #imageSanta {
     width: 100%;
 }
+
+@media screen and (max-width: 992px) {
+    .santa-card {
+        width: 100%;
+        height: 120px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin: 15px;
+
+    }
+}
 </style>

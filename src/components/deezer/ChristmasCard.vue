@@ -57,4 +57,18 @@ export default {
     color: rgb(228, 5, 5);
 
 }
+
+@media screen and (max-width: 992px) {
+    .deezer-card {
+        width: 100%;
+        height: 120px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin: 15px;
+        color: rgb(228, 5, 5);
+
+    }
+}
 </style>

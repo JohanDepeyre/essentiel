@@ -265,4 +265,49 @@ h5 {
 
     font-size: 15px;
 }
+
+
+@media screen and (max-width: 992px) {
+
+    .meteo-card {
+        width: 90%;
+        height: 120px;
+        background-color: #F0F0EF;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin: 15px;
+
+    }
+
+    .divRonde {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        box-shadow: 0 0 40px fade(black, 20);
+        background-color: #fff;
+        filter: drop-shadow(10px 10px 4px #4444dd);
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .weather-icon {
+        background-repeat: no-repeat;
+        background-position: center;
+
+        height: 75px;
+        width: 75px;
+        position: absolute;
+        top: -30px;
+        left: 0px;
+        filter: drop-shadow(1px 1px 0 fade(black, 3)) drop-shadow(-5px -5px 0 fade(black, 8));
+    }
+
+    h5 {
+        font-size: 10px;
+    }
+}
 </style>
